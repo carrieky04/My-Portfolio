@@ -50,7 +50,7 @@ h2 {
     border-bottom: 2px #fff solid;
 }
 
-.container {
+.navflex {
     display: flex;
     justify-content: space-between;
     align-items: center;
