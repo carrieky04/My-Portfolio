@@ -1,4 +1,7 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 
 .navbar {
     display: flex;
@@ -6,8 +9,8 @@
     justify-content: center;
     align-items: center;
     line-height: 1rem;
-    overflow: hidden;
-    margin-bottom: 0.5rem;
+    /* overflow: hidden; */
+    /* margin-bottom: 0.5rem; */
     background-image: linear-gradient(to bottom right, rgb(222, 127, 44), rgba(214, 79, 180, 0.887) );
 }
 
@@ -28,7 +31,7 @@
 }
 
 .nav-link {
-    flex: 1 0 10%;
+    flex: 1 0 100%;
     text-align: center;
 }
 
@@ -42,10 +45,11 @@
 
 .nav-link a:hover {
     border-bottom: 2px white solid;
+    
 }
 
 #profile-pic {
-    max-width: 50%;
+    max-width: 20%;
     height: auto;
     border-radius: 50%;
     opacity: 0.5;
@@ -62,6 +66,7 @@
     padding: 20px;
     margin: 10px;
 }
+
 
 #first-section {
     font-size: 2rem;
@@ -82,6 +87,9 @@ h2 {
     font-weight: 700;
     text-decoration: underline;
 }
+
+
+
 .image-gallery {
     display: flex;
     justify-content: center;
@@ -109,8 +117,9 @@ img:hover {
 .container {
     position: relative;
   }
+
   
-  /* Bottom right text */
+  /* Bottom left text */
   .text-block {
     position: absolute;
     bottom: 10px;
@@ -122,15 +131,52 @@ img:hover {
     opacity: 0.75;
   }
 
+  .contact-me {
+    font-family: Satisfy, cursive;
+  }
+
+  .contact-link {
+    color: black;
+    font-family: Roboto, sans-serif;
+  }
+
+
+@media (min-width: 600px) {
+    .nav-menu {
+        flex: 1 0 10%;  
+    }
+
+    .nav-link a {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 0.8rem;
+    }
+
+    .Hello {
+        padding: 0 0 0 1rem;
+    }
+
+}
+
+@media (min-width: 900px) {
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .nav-menu {
+        width: auto;
+    }
+    .Hello {
+        padding: 0 0 0 1rem;
+    }
+}
 
 
 
 
 
 
-
-
-@media (min-width:600px) {
+/* @media (min-width:600px) {
     .navbar {
         line-height: 1.5rem;
     }
@@ -158,4 +204,4 @@ img:hover {
         padding: 0px;
         border-radius: 50px;
     }
-}
+} */
