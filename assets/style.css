@@ -1,28 +1,26 @@
+* {
+    font-family: Roboto, sans-serif;
+}
 
+/*Header*/
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
-
-.navbar {
+.header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin: 5px;
     line-height: 1rem;
-    /* overflow: hidden; */
-    /* margin-bottom: 0.5rem; */
+    color: white;
     background-image: linear-gradient(to bottom right, rgb(222, 127, 44), rgba(214, 79, 180, 0.887) );
 }
 
-.Hello, .nav-menu {
-    font-family: Roboto, sans-serif;
-    color: white;
-}
+/* Navbar */
 
-.nav-menu {
+.navbar {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     padding: 0;
@@ -33,20 +31,23 @@
 .nav-link {
     flex: 1 0 100%;
     text-align: center;
+    padding: 5px;
 }
 
 .nav-link a {
-    display: block;
+    
     text-decoration: none;
+    line-height: 0rem;
     letter-spacing: 0.1rem;
-    padding: 0.8rem;
+    padding: 1px;
     color: white;
 }
 
 .nav-link a:hover {
-    border-bottom: 2px white solid;
-    
+    border-bottom: 2px white solid;   
 }
+
+/* About Me */
 
 #profile-pic {
     max-width: 20%;
@@ -68,14 +69,6 @@
 }
 
 
-#first-section {
-    font-size: 2rem;
-    text-align: center;
-    font-weight: 700;
-    text-decoration: underline;
-    
-}
-
 #about-me-text {
     font-size: 1rem;
     padding: 20px;
@@ -83,31 +76,32 @@
 }
 
 h2 {
+    font-family: Satisfy, cursive;
     font-size: 2rem;
     font-weight: 700;
     text-decoration: underline;
+    text-align: center;
 }
 
-
+/* My Projects */
 
 .image-gallery {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 10px;
-    
+    gap: 10px; 
 }
 
-img {
+.project-pic {
     border: 2px solid black;
     padding: 10px;
     flex-basis: 250px;
     border-radius: 8px;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
-img:hover {
+.project-pic:hover {
     box-shadow: inset 0px 0px 8px
     rgb(19, 185, 207), 0 0 8px
     rgb(115, 8, 173); 
@@ -118,9 +112,7 @@ img:hover {
     position: relative;
   }
 
-  
-  /* Bottom left text */
-  .text-block {
+.text-block {
     position: absolute;
     bottom: 10px;
     left: 10px;
@@ -129,27 +121,50 @@ img:hover {
     padding-left: 5px;
     padding-right: 5px;
     opacity: 0.75;
-  }
-
-  .contact-me {
-    font-family: Satisfy, cursive;
-  }
-
-  .contact-link {
-    color: black;
     font-family: Roboto, sans-serif;
   }
 
+  /* .contact-me */
+
+#contact-me {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    line-height: 1rem;
+    color: white;
+    background-image: linear-gradient(to bottom right, rgb(222, 127, 44), rgba(214, 79, 180, 0.887) );
+}
+
+  .contact-link {
+    display: block;
+    display: inline;
+    font-family: Roboto, sans-serif;
+  }
+
+  .contact-link a {
+    color: white;
+  }
+
+  .contact-link li {
+    display: inline;
+    padding: 20px;
+  }
+
+/* Media queries */
 
 @media (min-width: 600px) {
-    .nav-menu {
-        flex: 1 0 10%;  
+    .navbar {
+        flex: 1 0 10%;
     }
 
+    /* How can I change hover state. Border too long*/
     .nav-link a {
         display: flex;
         justify-content: flex-end;
         font-size: 0.8rem;
+        padding: 10px;
     }
 
     .Hello {
@@ -159,49 +174,21 @@ img:hover {
 }
 
 @media (min-width: 900px) {
+    
     .navbar {
-        justify-content: space-between;
-    }
-
-    .nav-menu {
         width: auto;
     }
-    .Hello {
-        padding: 0 0 0 1rem;
-    }
-}
 
-
-
-
-
-
-/* @media (min-width:600px) {
-    .navbar {
-        line-height: 1.5rem;
-    }
-
-    .nav-menu {
-        flex: 1 0 10%;
-    }
-}
-
-@media (min-width: 900px) {
-    .navbar {
+    /* Need to figure out how to make links on one line*/
+    .nav-link a {
+        display: flex;
         justify-content: flex-end;
+
+        
     }
 
     .Hello {
-        margin: 0 0 0 0.3rem;
+        padding: 0 1 0 1rem;
     }
+}
 
-    .nav-menu {
-        width: auto;
-    }
-
-    .nav-link a:hover {
-        border-bottom: 2px white solid;
-        padding: 0px;
-        border-radius: 50px;
-    }
-} */
