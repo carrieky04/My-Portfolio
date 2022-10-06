@@ -2,7 +2,7 @@
 
 ## Description
 
-I have created my first webpage from scratch which is acutally my portfolio of past projects I have done thus far in coding bootcamp. The purpose of creating is portfolio is to showcase to potential employers my skills and capabilites as a software developer. I currently only have three projects to show but will be adding more soon. While creating this project the "Mobile First" strategy was used.
+I have created my first webpage from scratch which is acutally my portfolio of past projects I have done thus far in coding bootcamp. The purpose of creating this portfolio is to showcase to potential employers my skills and capabilites as a software developer. I currently only have three projects to show but will be adding more soon. While creating this project the "Mobile First" strategy was used.
 
 Through this project I've learned how to setup my own html and CSS files from scratch, while creating a responsive website using the mobile first strategy and media queries. I tried to incorporate what we have learned through classes as well watching many Youtube videos and using Google. 
 
@@ -15,8 +15,10 @@ No installation is required.
 
 To see my past projects please follow this URL, once there, navigate to "My Projects" in the navigation bar:
 
+    deployed at : https://carrieky04.github.io/My-Portfolio/
 
-![screenshot] (assets/images/screenshot.png)
+
+![screenshot](https://github.com/carrieky04/My-Portfolio/blob/main/assets/Images/screenshot.png?raw=true)
     
 
 ## Credits
