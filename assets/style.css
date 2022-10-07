@@ -6,6 +6,7 @@
 
 .header {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -29,13 +30,11 @@
 }
 
 .nav-link {
-    flex: 1 0 100%;
     text-align: center;
     padding: 5px;
 }
 
 .nav-link a {
-    
     text-decoration: none;
     line-height: 0rem;
     letter-spacing: 0.1rem;
@@ -155,14 +154,11 @@ h2 {
 /* Media queries */
 
 @media (min-width: 600px) {
-    .navbar {
-        flex: 1 0 10%;
-    }
 
-    /* How can I change hover state. Border too long*/
+    .header {
+        justify-content: space-between;
+    }
     .nav-link a {
-        display: flex;
-        justify-content: flex-end;
         font-size: 0.8rem;
         padding: 10px;
     }
@@ -173,20 +169,11 @@ h2 {
 
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) {  
+    .header {
+        justify-content: space-between;
+    }
     
-    .navbar {
-        width: auto;
-    }
-
-    /* Need to figure out how to make links on one line*/
-    .nav-link a {
-        display: flex;
-        justify-content: flex-end;
-
-        
-    }
-
     .Hello {
         padding: 0 1 0 1rem;
     }
