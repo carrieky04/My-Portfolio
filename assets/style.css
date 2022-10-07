@@ -127,6 +127,7 @@ h2 {
 
 #contact-me {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -165,6 +166,10 @@ h2 {
 
     .Hello {
         padding: 0 0 0 1rem;
+    }
+
+    #contact-me {
+        flex-direction: row;
     }
 
 }
